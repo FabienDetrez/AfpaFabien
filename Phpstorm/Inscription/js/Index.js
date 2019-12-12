@@ -2,7 +2,7 @@
   if (!checkEmptyInput()){
     checkMailFormat();
   }
-});
+});*/
 
 $(document).on('submit', function(event, target){
   event.preventDefault();
@@ -25,15 +25,15 @@ function checkEmptyInput(){
 
 function checkMailFormat(){
 
-}*/
+}
 
-function validateEmail() {
+/*function validateEmail() {
   // There are, I feel, better version of this regex online
   // You can check "https://emailregex.com/"
   var reg = /^([A-Za-z0-9_\-\.]){1,}\@([A-Za-z0-9_\-\.]){1,}\.([A-Za-z]{2,4})$/;
 
   // document.getElementById() - Easier to read & understand, and more widely used
-  var address = document.getElementById('Email').value;
+  var address = $('#email').value;
 
   // Corrected your returns - not the main issue in the function, but the old
   // returns might have caused confusion
@@ -42,6 +42,6 @@ function validateEmail() {
     return false
   }
   return true
-}
+}*/
 
 let bp;
