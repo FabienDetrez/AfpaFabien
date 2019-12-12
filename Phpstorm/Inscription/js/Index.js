@@ -33,7 +33,8 @@ function checkMailFormat(){
   var reg = /^([A-Za-z0-9_\-\.]){1,}\@([A-Za-z0-9_\-\.]){1,}\.([A-Za-z]{2,4})$/;
 
   // document.getElementById() - Easier to read & understand, and more widely used
-  var address = $('#email').value;
+  var address = document.getElementById('email').value;
+  //address = $('#Email').val();
 
   // Corrected your returns - not the main issue in the function, but the old
   // returns might have caused confusion
