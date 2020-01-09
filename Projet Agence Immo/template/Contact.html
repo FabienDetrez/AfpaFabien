@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../src/css/header.css">
     <link rel="stylesheet" href="../src/css/footer.css">
+    <link rel="stylesheet" href="../src/css/Contact.css">
 
 
 </head>
@@ -29,16 +30,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="">Accueil<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.html">Accueil<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ventes</a>
+                        <a class="nav-link" href="Ventes.html">Ventes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Locations</a>
+                        <a class="nav-link" href="Locations.html">Locations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="Contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -50,8 +51,53 @@
     </div>
 </div>
 
-<!------------------------ Contenu Contact ------------------------>
 
+
+<!------------------------ Contenu Contact ------------------------>
+<div class="container">
+    <div class="card mb-3">
+        <div class="card-header" id="contact">Formulaire de contact</div>
+        <div class="card-body">
+            <form>
+                <div class="form-group row mt-5">
+                    <label for="nom" class="col-4 col-md-2 col-form-label">Nom</label>
+                    <div class="col-8 col-md-10">
+                        <input class="form-control" type="text" value="Dupont" id="nom">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="prenom" class="col-4 col-md-2 col-form-label">Prénom</label>
+                    <div class="col-8 col-md-10">
+                        <input class="form-control" type="text" value="Jean" id="prenom">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-email-input" class="col-4 col-md-2 col-form-label">Email</label>
+                    <div class="col-8 col-md-10">
+                        <input class="form-control" type="email" value="bidule@machin.com" id="example-email-input">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="telephone" class="col-4 col-md-2 col-form-label">Téléphone</label>
+                    <div class="col-8 col-md-10">
+                        <input class="form-control" type="tel" value="06 06 06 06 06" id="telephone">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="message" class="col-4 col-md-2 col-form-label">Message</label>
+                    <div class="col-8 col-md-10">
+                        <textarea class="form-control" id="message" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 mb-2 mx-auto">
+                        <button type="button" class="btn btn-warning" id="envoyer">Envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 
 

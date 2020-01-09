@@ -16,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -31,9 +31,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjetVelo" />
+    <property name="last_opened_file_path" value="D:/Projet vélo/template/Contact.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\detre\Phpstorm\Projet Agence Immo\src\js" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -63,6 +68,9 @@
       <workItem from="1578419906798" duration="4470000" />
       <workItem from="1578430536783" duration="600000" />
       <workItem from="1578467551980" duration="11664000" />
+      <workItem from="1578511474481" duration="3444000" />
+      <workItem from="1578554399175" duration="8387000" />
+      <workItem from="1578591848297" duration="5286000" />
     </task>
     <servers />
   </component>
@@ -70,9 +78,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="709" y="296" key="FileChooserDialogImpl" timestamp="1578303148434">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state x="-1187" y="285" key="FileChooserDialogImpl" timestamp="1578571476420">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1187" y="285" key="FileChooserDialogImpl/0.0.1858.1080/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578571476420" />
     <state x="709" y="296" key="FileChooserDialogImpl/0.0.1858.1080/-1920.0.1920.1040@0.0.1858.1080" timestamp="1578303148434" />
     <state x="430" y="183" key="SettingsEditor" timestamp="1578408180545">
       <screen x="0" y="0" width="1858" height="1080" />

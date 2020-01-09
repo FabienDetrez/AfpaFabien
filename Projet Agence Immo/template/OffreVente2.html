@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="src/css/footer.css">
-    <link rel="stylesheet" href="src/css/Accueil.css">
+    <link rel="stylesheet" href="../src/css/header.css">
+    <link rel="stylesheet" href="../src/css/footer.css">
+    <link rel="stylesheet" href="../src/css/Offre1.css">
+
+
 
 </head>
 <body>
@@ -20,7 +22,7 @@
 <!------------------------ Header ------------------------>
 <div class="container-fluid">
     <div class="header">
-        <div id="logo"><img src="src/img/logo.svg" class="img-fluid"></div>
+        <div id="logo"><img src="../src/img/logo.svg" class="img-fluid"></div>
         <div class="h1">La Maison de L'immobilier</div>
         <div><button type="button" id="connexion" class="btn btn-warning">Connexion</button></div>
     </div>
@@ -29,16 +31,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.html">Accueil<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="template/Ventes.html">Ventes</a>
+                        <a class="nav-link" href="Ventes.html">Ventes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="template/Locations.html">Locations</a>
+                        <a class="nav-link" href="Locations.html">Locations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="template/Contact.html">Contact</a>
+                        <a class="nav-link" href="Contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -50,41 +52,53 @@
     </div>
 </div>
 
-<!------------------------ Contenu Acceuil ------------------------>
-<div class="container-fluid">
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="src/img/448-2000x500.jpg" alt="" class="imgSlider"/>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<!------------------------ Contenu Offre 1 ------------------------>
+<div class="container">
+    <div class="card mb-3" >
+        <div class="row no-gutters">
+            <div class="col-md-4" id="carouselOffre">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../src/img/Maison1/saint-andre-lez-lille-maison-v6216-1.jpg" class="d-block w-100" alt=""/></div>
+                        <div class="carousel-item">
+                            <img src="../src/img/Maison1/saint-andre-lez-lille-maison-v6216-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../src/img/Maison1/saint-andre-lez-lille-maison-v6216-3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="src/img/343-2000x500.jpg" alt="" class="imgSlider"/>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">La Madeleine - MAISON - 100m² - réf : V6217</h5>
+                    <h3 class="prix">212 000 €</h3>
+                    <p>Jolie maison ancienne de 100 m2 comprenant un séjour, une salle à manger, une cuisine équipée avec coin repas, une cour, 3 chambres sur deux niveaux et une sdb à l'étage.</p>
+                    <p>A DEUX PAS DE LA CITADELLE</p>
+
+                    <p>Dont 6.00% TTC d'honoraires à la charge de l'acquéreur</p>
+                    <p>Mandat n°3361</p>
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <div id="maps"></div>
     </div>
 </div>
-
-
 
 <!------------------------ Footer ------------------------>
 <div class="container-fluid">
@@ -106,7 +120,9 @@
 
 
 
-
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-Q8-xZAvhbFCoWYWh0gv02z36JFqDCVg&callback=initMap">
+</script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -118,5 +134,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script src="../src/js/Offre2.js"></script>
 </body>
 </html>
