@@ -31,7 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Projet vélo/template/Contact.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
@@ -71,6 +71,9 @@
       <workItem from="1578511474481" duration="3444000" />
       <workItem from="1578554399175" duration="8387000" />
       <workItem from="1578591848297" duration="5286000" />
+      <workItem from="1578641577702" duration="738000" />
+      <workItem from="1578642492614" duration="542000" />
+      <workItem from="1578676008737" duration="13000" />
     </task>
     <servers />
   </component>
