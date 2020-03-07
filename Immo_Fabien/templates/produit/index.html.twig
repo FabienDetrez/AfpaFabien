@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Produit index{% endblock %}
+
+{% block body %}
+    {% if app.user != null %}
+    <h1>Produit</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>NomProduit</th>
+                <th>Type de bien</th>
+                <th>Location/Vente</th>
+                <th>Description</th>
+                <th>Surface</th>
+                <th>NombrePiece</th>
+                <th>Prix</th>
+                {% if app.user != null %}
+                <th>actions</th>
+                {% endif %}
+            </tr>
+        </thead>
+        <tbody>
+        {% for produit in produits %}
+            <tr>
+                <td>{{ produit.nomProduit }}</td>
+                <td>{{ produit.typeProduit.nomTypeProduit }}</td>
+                <td>{{ produit.typeVente.nomTypeVente }}</td>
+                <td>{{ produit.description }}</td>
+                <td>{{ produit.surface }}</td>
+                <td>{{ produit.nombrePiece }}</td>
+                <td>{{ produit.prix }}</td>
+
+                {% if app.user != null %}
+                <td>
+                    <a href="{{ path('produit_show', {'id': produit.id}) }}" class="btn btn-primary">+ de détails</a>
+                    <a href="{{ path('produit_edit', {'id': produit.id}) }}" class="btn btn-primary mt-2">Modifier</a>
+                </td>
+                {% endif %}
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="9">Pas de bien trouvé</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <a href="{{ path('produit_new') }}" class="btn btn-primary">Nouveau bien</a>
+    {% endif %}
+    {% if app.user == null %}
+    {% for produit in produits %}
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h3 class="card-title">{{ produit.nomProduit }}</h3>
+                    <h5>{{ produit.prix }}€</h5>
+                    <p class="card-text">{{ produit.description }}</p>
+                    <a href="{{ path('produit_show', {'id': produit.id}) }}" class="btn btn-primary">+ de détails</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+{% endblock %}

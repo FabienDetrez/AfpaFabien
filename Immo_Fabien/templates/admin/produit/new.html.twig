@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Création nouveau produit{% endblock %}
+
+{% block body %}
+    <h1>Création nouveau produit</h1>
+
+    {{ include('admin/produit/_form.html.twig') }}
+
+    <a href="{{ path('produit_index') }}" class="btn btn-secondary">Retour</a>
+{% endblock %}

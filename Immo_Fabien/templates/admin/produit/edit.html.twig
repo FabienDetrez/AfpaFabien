@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier le bien{% endblock %}
+
+{% block body %}
+    <h1>Modification</h1>
+
+    {{ include('admin/produit/_form.html.twig', {'button_label': 'Enregistrer'}) }}
+
+    {{ include('admin/produit/_delete_form.html.twig') }}
+
+    <a href="{{ path('produit_index') }}" class="btn btn-secondary mt-2">Retour</a>
+{% endblock %}

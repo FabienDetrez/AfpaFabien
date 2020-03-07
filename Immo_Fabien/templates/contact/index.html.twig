@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contactez nous{% endblock %}
+
+{% block body %}
+<h1>Contact</h1>
+    {{ form_start(form) }}
+
+    {{ form_row(form.nom) }}
+    {{ form_row(form.prenom) }}
+    {{ form_row(form.email) }}
+    {{ form_row(form.sujet) }}
+    {{ form_row(form.message) }}
+<div class="envoyer"><button class="btn btn-primary">Envoyer</button></div>
+{#    {{ form_row(form.Envoyer) }}#}
+    {{ form_end(form) }}
+
+{% endblock %}

@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.img-fluid{
+    width:150px;
+}
+
+#logo{
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+
+.container-fluid{
+    padding: 0px;
+}
+
+.envoyer{
+    text-align: center;
+}
+
+#login{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
